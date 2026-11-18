@@ -1,0 +1,22 @@
+{
+  "name": "csc372-assignment6",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/tutruong8/CSC372-Assignment6#readme",
+  "bugs": {
+    "url": "https://github.com/tutruong8/CSC372-Assignment6/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tutruong8/CSC372-Assignment6.git"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "dev": "node --watch --env-file=.env server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "pg": "^8.23.1"
+  }
+}
