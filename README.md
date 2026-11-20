@@ -1,19 +1,25 @@
 # CSC372-Assignment-6: Triviabook
 Trivia REST API built with Node.js, Express, and PostgreSQL (using Neon Console). Uses a Model/Controller/Router design artitechture
 
+**Live API:** https://csc372-assignment6-pqck.onrender.com/triviabook/topics
+
+Try it in the browser:
+- All topics: https://csc372-assignment6-pqck.onrender.com/triviabook/topics
+- Science questions: https://csc372-assignment6-pqck.onrender.com/triviabook/topic/science
+- Random question: https://csc372-assignment6-pqck.onrender.com/triviabook/random
+
+This is hosted on Render's free tier, so if the API is idle for 15 minutes, the first request can take about a minute waiting for the server to wakes up.
 
 ## Database Schema
 Two tables with a one-to-many relationship: one topic has many questions.
  
 ### `topics`
- 
 | Column | Type | Constraints |
 |---|---|---|
 | `id` | `SERIAL` | `PRIMARY KEY` |
 | `name` | `TEXT` | `NOT NULL`, `UNIQUE` |
  
 ### `questions`
- 
 | Column | Type | Constraints |
 |---|---|---|
 | `id` | `SERIAL` | `PRIMARY KEY` |
